@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/Akhu/Compose-PinCode-View.svg)](https://jitpack.io/#Akhu/Compose-PinCode-View)
+
 # PinCodeInput - Jetpack Compose PIN Code View
 
 A customizable PIN code input view for Jetpack Compose. Perfect for secure validation screens (authentication, payments, etc.), this component includes a shake animation, validation state handling, and a smooth UI.
