@@ -12,7 +12,29 @@ A customizable PIN code input view for Jetpack Compose. Perfect for secure valid
 
 ## 🚀 Installation
 
-Add this module to your Compose project.
+### Option 1: JitPack (recommended)
+
+1. Add JitPack to your root `build.gradle` or `settings.gradle`:
+
+```kotlin
+repositories {
+    maven { url = uri("https://jitpack.io") }
+}
+```
+
+2. Add the dependency to your module:
+
+```kotlin
+dependencies {
+    implementation("com.github.Akhu:Compose-PinCode-View:<latest-tag>")
+}
+```
+
+> Replace `<latest-tag>` with the latest release tag, e.g. `v1.0.0`
+
+---
+
+### Option 2: Manual import
 
 1. Copy the `PinCodeInput.kt` file into your `ui/components` or preferred directory.
 2. Make sure you have the necessary Compose dependencies in your `build.gradle`:
@@ -26,8 +48,7 @@ implementation("androidx.compose.animation:animation:<version>")
 ---
 
 ## ✨ Basic Usage
-* The philosophy is to let the parent view handle the validation logic. 
-* The `PinCodeInput` component will notify the parent when the PIN code is entered, then the parent can validate it and update the state.
+
 ```kotlin
 var pincodeStatus by remember { mutableStateOf(PinCodeViewValidationStatus.IDLE) }
 
@@ -103,3 +124,4 @@ Issues, PRs, and suggestions are welcome!
 
 ## ✅ License
 [MIT](LICENSE)
+
